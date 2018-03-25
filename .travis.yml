@@ -4,6 +4,9 @@ branches:
 
 notifications: never
 
+build:
+  echo "Building!"
+
 deploy:
   provider: pages
   github_token: $GITHUB_TOKEN
