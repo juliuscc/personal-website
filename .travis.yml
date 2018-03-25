@@ -1,0 +1,9 @@
+branches:
+  only:
+  - master
+
+notifications: never
+
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
