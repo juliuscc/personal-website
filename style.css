@@ -14,21 +14,69 @@ h2.extra {
 	padding: 2px 30px;
 }
 
-a:link {
-	color: purple;
+a {
+	color: black;
 	background-color: transparent;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:visited {
-	color: gray;
+	color: rgba(56, 122, 163, 0.283);
 	background-color: transparent;
-	text-decoration: underline;
 }
 
 .center_text {
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
 	background-color: rgba(163, 223, 228, 0.571);
 	color: aliceblue;
 	padding: 30px;
-	margin: 150px;
+	margin: 100px;
+}
+
+.profile {
+	width: 500px;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	background-color: rgba(163, 223, 228, 0.571);
+	padding: 8px;
+	margin: 5px;
+}
+
+.navbar > * {
+	margin-left: 15px;
+}
+
+#myname {
+	color: aquamarine;
+}
+
+.wrapper {
+	display: flex;
+}
+
+.right-column {
+	background-color: blue;
+	height: 300px;
+	flex: 1;
+	min-width: 150px;
+}
+
+.experience {
+	background-color: green;
+	height: 300px;
+	flex: 2;
+}
+
+.education {
+}
+
+.personal {
 }
