@@ -215,11 +215,12 @@ h1.projects-content {
 }
 .sub-column {
   margin: 30px;
+  margin-bottom: 0px;
 }
 
 .sub-column-2 {
   margin: 30px;
-  margin-top: 0px;
+  margin-top: 1px;
 }
 
 .boxes {
@@ -246,6 +247,7 @@ h2.boxes {
 
 .list {
   list-style: disc;
+  margin-top: 6px;
 }
 
 .projects {
@@ -271,7 +273,7 @@ h2.projects {
 }
 
 .logo {
-  width: 10%;
+  width: 50px;
   align-self: flex-start;
   margin: 0px;
   margin-right: 15px;
@@ -280,5 +282,5 @@ h2.projects {
 .something {
   background-color: #545555;
   height: 200px;
-  widht: 100%;
+  width: 100%;
 }
