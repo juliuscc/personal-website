@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   font-family: "EB Garamond", serif;
+  font-size: 20px;
 }
 
 header {
@@ -16,12 +17,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px;
-  height: 20vh;
+  padding: 20px;
+  box-sizing: content-box;
 }
 
 footer {
-  background-color: rgba(227, 233, 236, 1);
+  background-color: #7cd8e8;
   padding: 100px;
 }
 
@@ -36,7 +37,7 @@ a:hover {
   color: rgba(227, 233, 236, 1);
 }
 
-h1 {
+header h1 {
   font-size: 70px;
   letter-spacing: 2px;
 }
@@ -83,17 +84,57 @@ nav li {
   background-attachment: fixed;
   background-size: cover;
   display: flex;
-  height: 20px;
+  height: 30vh;
   justify-content: center;
   align-items: center;
 }
 
-.about-me-wrapperm {
+.about-me-wrapper {
+  position: relative;
   display: flex;
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+}
+
+.about-me {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me-wrapper {
+    display: block !important;
+    height: 100%;
+    width: 50%;
+    /* padding: 20px; */
+  }
+}
+
+.profile-image-wrapper {
+  position: relative;
+  width: 50%;
+  padding: 20px;
 }
 
 .profile-image {
-  width: 50%;
+  width: 250px;
+}
+
+.education-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.kth-wrapper {
+  width: 100%;
+}
+
+.education-text {
+  text-align: center;
+  padding: 30px;
 }
 
 .contact-bar-wrapper {
@@ -105,8 +146,18 @@ nav li {
 .contact-bar {
 }
 
-.contact-bar li {
-  display: inline;
+.contact-bar-wrapper li {
+  display: inline-block;
   list-style: none;
   font-size: 17px;
+  width: 20%;
+}
+
+.contact-bar-wrapper ul {
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  width: 60%;
 }
