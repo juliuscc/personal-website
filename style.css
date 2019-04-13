@@ -26,8 +26,13 @@ section {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
   background-color: #7cd8e8;
-  padding: 100px;
+  padding: 50px;
 }
 
 a {
@@ -48,8 +53,14 @@ header h1 {
 }
 
 nav {
-  padding: 20px;
-  padding-bottom: 0px;
+  padding: 30px;
+  padding-bottom: 8px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  /* background-color: rgb(235, 243, 245, 0.8); */
 }
 
 nav li {
@@ -59,7 +70,7 @@ nav li {
 }
 
 .nav-menu {
-  text-align: right;
+  float: right;
   margin: 0;
   padding: 0;
 }
@@ -99,7 +110,7 @@ nav li {
   display: flex;
   height: 100%;
   width: 50%;
-  padding: 30px;
+  padding-top: 20px;
 }
 
 .about-me {
@@ -108,9 +119,10 @@ nav li {
   width: 50%;
   padding: 20px;
   margin-right: 0px;
+  padding-right: 70px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .about-me-wrapper {
     display: block !important;
     height: 100%;
@@ -135,12 +147,49 @@ nav li {
 }
 
 .kth-wrapper {
-  width: 100%;
+  display: flex;
+  align-self: flex-start;
+  width: 75%;
+  padding-bottom: 0px;
+}
+
+.ntu-wrapper {
+  display: flex;
+  align-self: flex-start;
+  width: 75%;
+  padding-top: 0px;
 }
 
 .education-text {
   text-align: center;
   padding: 30px;
+}
+
+.skills-wrapper {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 60px 100px;
+  align-items: flex-start;
+}
+
+.project-wrapper h2 {
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
 }
 
 .contact-bar-wrapper {
@@ -151,15 +200,15 @@ nav li {
 
 .contact-bar-wrapper a {
   display: flex;
-  flex-shrink: 1;
   text-decoration: none;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  margin-right: 0px;
+  margin: 20px 5px;
+
+  height: 50px;
 }
 
 .icon {
-  width: 40px;
-  margin: 20px;
+  width: 30px;
   padding: 0px;
 }
