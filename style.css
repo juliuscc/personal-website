@@ -19,8 +19,8 @@ header {
 
 section {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   padding: 20px;
   box-sizing: content-box;
 }
@@ -44,6 +44,12 @@ a {
 
 a:hover {
   color: rgba(227, 233, 236, 1);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header h1 {
@@ -106,6 +112,7 @@ nav li {
 }
 
 .about-me-wrapper {
+  justify-content: center;
   position: relative;
   display: flex;
   height: 100%;
@@ -141,41 +148,76 @@ nav li {
   width: 250px;
 }
 
+.knowledge-wrapper {
+  background-color: #ebeff0;
+  display: flex;
+}
+
 .education-wrapper {
   display: flex;
   flex-direction: column;
+  padding: 50px;
+  width: 50%;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
+.education-wrapper a {
+  margin: 0px;
+}
 .kth-wrapper {
-  display: flex;
-  align-self: flex-start;
-  width: 75%;
   padding-bottom: 0px;
+  padding: 0;
+  width: 100%;
 }
 
 .ntu-wrapper {
-  display: flex;
-  align-self: flex-start;
-  width: 75%;
-  padding-top: 0px;
+  padding-bottom: 0px;
+  padding: 0;
 }
 
 .education-text {
-  text-align: center;
+  /* text-align: center; */
   padding: 30px;
 }
 
 .skills-wrapper {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .skills {
+  justify-content: flex-start;
+  padding: 50px;
+  width: 50%;
+}
+
+.pill {
+  margin: 8px;
+  padding: 10px;
+  display: block;
+  padding: 1rem 1.5rem;
+  border-radius: 10em;
+  border: 2px solid rgb(103, 205, 228);
+  color: rgb(103, 205, 228);
+}
+
+.project-wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.project-wrapper {
+.projects {
   display: flex;
   flex-direction: row;
   padding: 60px 100px;
@@ -203,7 +245,7 @@ nav li {
   text-decoration: none;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  margin: 20px 5px;
+  margin: 20px 8px;
 
   height: 50px;
 }
