@@ -30,8 +30,9 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: white;
-  background-color: #7cd8e8;
+  color: black;
+  /* background-color: #7cd8e8; */
+  background-color: rgb(235, 243, 245, 0.8);
   padding: 50px;
 }
 
@@ -157,18 +158,15 @@ nav li {
   display: flex;
   flex-direction: column;
   padding: 50px;
-  width: 50%;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .education-wrapper a {
   margin: 0px;
 }
 .kth-wrapper {
+  /* border: 2px solid rgb(103, 205, 228); */
   padding-bottom: 0px;
   padding: 0;
-  width: 100%;
 }
 
 .ntu-wrapper {
@@ -177,15 +175,13 @@ nav li {
 }
 
 .education-text {
-  /* text-align: center; */
+  text-align: center;
   padding: 30px;
 }
 
 .skills-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .skills ul {
@@ -199,7 +195,7 @@ nav li {
 .skills {
   justify-content: flex-start;
   padding: 50px;
-  width: 50%;
+  /* width: 100%; */
 }
 
 .pill {
@@ -212,9 +208,15 @@ nav li {
   color: rgb(103, 205, 228);
 }
 
+pill:hover {
+  background-color: rgb(103, 205, 228);
+  color: white;
+}
+
 .project-wrapper {
   display: flex;
   flex-direction: column;
+  /* background-color: rgb(235, 243, 245, 0.8); */
 }
 
 .projects {
