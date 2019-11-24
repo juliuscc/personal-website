@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-image: url(yay.jpg);
+  background-image: url(images/yay.jpg);
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -103,7 +103,7 @@ nav li {
 }
 
 .image-section {
-  background-image: url(yay.jpg);
+  background-image: url(images/yay.jpg);
   background-attachment: fixed;
   background-size: cover;
   display: flex;
